@@ -11,7 +11,7 @@ class Triangle implements ShapeInterface
     public $second_line;
     public $third_line;
 
-    public function __construct(int $first_line , int $second_line , int $third_line)
+    public function __construct($first_line , $second_line ,  $third_line)
     {
         $this->first_line = $first_line;
         $this->second_line = $second_line;
