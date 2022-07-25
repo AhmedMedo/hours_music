@@ -1,0 +1,23 @@
+# config/routes.yaml
+triangle:
+    path: /triangle/{a}/{b}/{c}
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\ShapeController::triangle
+    requirements:
+        a: '\d+'
+        b: '\d+'
+        c: '\d+'
+circle:
+    path: /circle/{radius}
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\ShapeController::circle
+    requirements:
+        radius: '\d+'
+sum_areas:
+    path: /sum_areas/circle/{radius}/triangle/{a}/{b}/{c}
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\ShapeController::sum_areas
+    requirements:
+        radius: '\d+'
+
+
